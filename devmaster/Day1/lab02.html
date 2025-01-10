@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Học viên</title>
+</head>
+<body>
+    <table width="500px" border="1" align="center" cellpadding="5">
+        <caption><h3>Danh sách học viên</h3></caption>
+        <tr>
+            <th rowspan="2">STT</th>
+            <th rowspan="2">Họ Tên</th>
+            <th rowspan="2">Ngày Sinh</th>
+            <th colspan="3">Điểm</th>
+        </tr>
+        <tr>
+            <th>Toán</th>
+            <th>Văn</th>
+            <th>Anh</th>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td><a href="chitiet.html">Nguyễn Văn Lịch</a></td>
+            <td align="center">01/05/1997</td>
+            <td align="center">9</td>
+            <td align="center">7</td>
+            <td align="center">9</td>
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td><a href="chitiet.html">Nguyễn Văn Lịch</a></td>
+            <td align="center">01/05/1997</td>
+            <td align="center">9</td>
+            <td align="center">7</td>
+            <td align="center">9</td>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td><a href="chitiet.html">Nguyễn Văn Lịch</a></td>
+            <td align="center">01/05/1997</td>
+            <td align="center">9</td>
+            <td align="center">7</td>
+            <td align="center">9</td>
+        </tr>
+        <tr>
+            <td align="center">4</td>
+            <td><a href="chitiet.html">Nguyễn Văn Lịch</a></td>
+            <td align="center">01/05/1997</td>
+            <td align="center">9</td>
+            <td align="center">7</td>
+            <td align="center">9</td>
+        </tr>
+    </table>
+    <hr/>
+    <form action="" method="post">
+        <table width="500px">
+    <caption><h3>Đăng ký thành viên</h3></caption>
+    <tr>
+        <td width="150">Họ và Tên</td>
+        <td><input type="text" name="fullName" id="fullName" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Tên Đăng Nhập</td>
+        <td><input type="text" name="userName" id="userName" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Mật khẩu</td>
+        <td><input type="text" name="pass" id="pass" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Ảnh đại diện</td>
+        <td><input type="file" name="avata" id="avata" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Thư điện tử</td>
+        <td><input type="email" name="email" id="email" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Giới tính</td>
+        <td>
+            <input type="radio" name="gender" id="male" value="1"/>
+            <label for="male">Nam</label>
+            <input type="radio" name="gender" id="female" value="0"/>
+            <label for="female">Nữ</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Sở thích</td>
+        <td>
+            <input type="checkbox" name="bongda" id="bongda"/>
+            <label for="bongda">Bóng Đá</label>
+            <input type="checkbox" name="xemphim" id="xemphim"/>
+            <label for="xemphim">Xem Phim</label>
+            <input type="checkbox" name="nghenhac" id="nghenhac"/>
+            <label for="nghenhac">Nghe nhạc</label>
+            <input type="checkbox" name="dulich" id="dulich"/>
+            <label for="dulich">Du lịch</label>
+            <input type="checkbox" name="boi" id="boi"/>
+            <label for="boi">bơi</label>
+        </td>
+    </tr>
+    <tr>
+        <td>Quê Quán</td>
+        <td>
+            <select name="province" id="province">
+                <option value="">--Chọn Tỉnh--</option>
+                <option value="">Hà Nội</option>
+                <option value="">Hải Phỏng</option>
+                <option value="">Quảng Ninh</option>
+
+
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Địa chỉ</td>
+        <td><input type="text" name="address" id="address" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Điện thoại</td>
+        <td><input type="text" name="mobile" id="mobile" size="30"/></td>
+    </tr>
+    <tr>
+        <td>Mô tả ngắn</td>
+        <td>
+            <textarea name="description" id="description" cols="40" rows="5"></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Đăng kí" name="register"/>
+            <input type="reset" value="Làm lại" name="reset"/>
+
+        </td>
+    </tr>
+
+        </table>
+    </form>
+</body>
+</html>
