@@ -185,3 +185,91 @@ h2{
     transform: translateX(-50%);
     bottom: 0;
 }
+.title{
+    color:#000;
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 1rem;
+    padding-top: 1.25rem;
+}
+strong{
+    color:#1670c5
+}
+.content{
+    padding-left: 5rem;
+}
+.icon {
+    padding-right: .5rem; 
+}
+.section .list li{
+    display: flex;
+    padding: .5rem 0;
+}
+/* linh vuc hoat dong */
+#linh-vuc h2 img{
+    margin: 0 2rem;
+}
+#linh-vuc h2::before{
+    position: absolute;
+    content:"";
+    width: calc(100% - 250px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.service-image{
+    height: 200px;
+    background-color: #d6d5d5;
+    border-radius: 14px;
+}
+.service-image img{
+    padding-top: 24px;
+    display: block;
+    height: 180px;
+    width: auto;
+}
+.service-name{
+    padding-top: 2rem;
+    text-align: center;
+    color: #00aeef;
+}
+/* tri an */
+#banner2{
+    display: flex;
+    width: 1920px;
+    height: 421px;
+    background: url(../images/banner2.png);
+    justify-content: center;
+    align-items: center;
+    
+}
+.banner2{
+    width: 1410px;
+}
+.text-align-center{
+    padding-top: .5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+.img-fix{
+    display: flex;
+    height: 126px;
+    align-items: center;
+}
+/* tin tuc va su kien */
+#tin-tuc-su-kien h2 img{
+    margin: 0 2rem;
+}
+#tin-tuc-su-kien h2::before{
+    position: absolute;
+    content:"";
+    width: calc(100% - 230px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
