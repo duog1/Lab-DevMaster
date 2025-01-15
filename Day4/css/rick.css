@@ -281,3 +281,13 @@ strong{
     transform: translateX(-50%);
     bottom: 0;
 }
+#tin-tuc-su-kien h2::before{
+    position: absolute;
+    content:"";
+    width: calc(100% - 230px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
