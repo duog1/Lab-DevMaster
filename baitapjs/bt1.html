@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check(){
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            if (username == "admin" && password == "admin")
+        {
+            document.writeln("<P><H4><I> Welcome to world of java script</I></H4></P>");
+        }
+        else{
+            document.writeln("<P><H4><I>False</I></H4></P>");
+        }
+        }
+        function validateUsername(){
+            var username = document.getElementById("username");
+            if(username.value == "")
+            {
+                alert("You can not leave the username field blank");
+                username.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="login">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" onblur="validateUsername()"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="button" value="Login" onclick="check()">
+        <input type="reset" value="Reset">
+    </form>
+    
+</body>
+</html>

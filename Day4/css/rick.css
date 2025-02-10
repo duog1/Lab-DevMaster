@@ -281,10 +281,146 @@ strong{
     transform: translateX(-50%);
     bottom: 0;
 }
-#tin-tuc-su-kien h2::before{
+#tin-tuc-su-kien{
+    background-color: #f6f6f6;
+}
+.newfit {
+    padding: 1rem 0; /* Khoảng cách trên dưới của menu */
+}
+
+.newfit ul {
+    display: flex;
+    justify-content: space-around; /* Căn đều các mục menu */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    margin: 0;
+    padding: 0;
+}
+
+.newfit ul li {
+    flex: 1; /* Mỗi mục chiếm đều khoảng không gian */
+    text-align: center;
+    border-bottom: .5rem solid #1670c5;
+}
+
+.newfit ul li a {
+    display: block; /* Giúp phần tử a bao toàn bộ diện tích li */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 1.25rem; /* Kích thước chữ */
+    color: #999797; /* Màu chữ mặc định */
+    padding: 0.5rem 0; /* Căn chỉnh nội dung bên trong */
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+}
+.newfit ul li a:hover {
+    color: #fff; /* Giữ màu chữ trắng khi hover */
+    background-color: #1670c5; /* Màu nền khi hover */
+}
+.newfit-2{
+    text-align: center;
+}
+.news-item{
+    padding: .25rem;
+}
+.news-title{
+    padding-top: 1rem;
+    padding-left: .75rem;
+    text-align: left;
+}
+.news-description{
+    padding-left: .75rem;
+    text-align: left;
+}
+.news-footer{
+    padding-right: .75rem;
+    text-align: right;
+}
+.news-date img{
+    padding-right: .75rem;
+}
+.news-link{
+    text-decoration: none;
+    color: #000;
+}
+/* du an */
+#du-an h2 img{
+    margin: 0 2rem;
+}
+#du-an h2::before{
     position: absolute;
     content:"";
-    width: calc(100% - 230px - 5rem);
+    width: calc(100% - 250px - 5rem);
+    height: .25rem;
+    background-color: #00aeef;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.duan{
+    padding: 1rem 0;
+}
+.duan ul {
+    display: flex;
+    justify-content: space-between; /* Căn đều các mục menu */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    list-style: none; /* Loại bỏ dấu đầu dòng */
+    margin: 0;
+    padding: 0;
+}
+.duan ul li {
+    text-align: center;
+    width: 26rem;
+    background-color: #f6f6f6;
+}
+
+.duan ul li a {
+    display: block; /* Giúp phần tử a bao toàn bộ diện tích li */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-size: 1.25rem; /* Kích thước chữ */
+    color: #020202; /* Màu chữ mặc định */
+    padding: 1rem 0; /* Căn chỉnh nội dung bên trong */
+    transition: all 0.3s ease; /* Hiệu ứng mượt khi hover */
+    font-weight: bold;
+}
+.duan ul li a:hover {
+    color: #fff; /* Giữ màu chữ trắng khi hover */
+    background-color: #1670c5; /* Màu nền khi hover */
+}
+.border-img{
+    
+    text-align: center;
+    background-color: #f6f6f6;
+}
+
+.border-img img{
+    width: 90%;
+    height: auto;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.anh3{
+    margin-top: 2rem;
+}
+.anh3 p{
+    text-align: center;
+    height: 2rem;
+}
+.anh3 p a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* doi tac */
+#doi-tac{
+    margin-top: 5rem;
+    background-color: #f6f6f6;
+}
+#doi-tac h2::before{
+    position: absolute;
+    content:"";
+    width: calc(100% - 159px - 5rem);
     height: .25rem;
     background-color: #00aeef;
     left:50%;

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dãy số lồng nhau</title>
+    <script>
+        function generateSequence() {
+            let output = "";
+            for (let i = 0; i <= 9; i++) {
+                for (let j = 0; j <= i; j++) {
+                    output += j;
+                }
+                output += "<br>";
+            }
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</head>
+<body onload="generateSequence()">
+    <div id="result"></div>
+</body>
+</html>
